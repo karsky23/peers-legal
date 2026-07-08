@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peers - Rules and Privacy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #101827;
+      --muted: #5b6675;
+      --line: #e4e9f1;
+      --accent: #0d74ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #ffffff 0, var(--bg) 420px);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 28px 16px 44px; }
+    .hero, section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 48px rgba(31, 42, 55, .08);
+    }
+    .hero { padding: 24px; margin-bottom: 14px; }
+    section { padding: 20px 22px; margin: 14px 0; }
+    h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: -.03em; }
+    h2 { margin: 0 0 10px; font-size: 20px; letter-spacing: -.02em; }
+    p { margin: 8px 0; color: var(--muted); }
+    ul { margin: 10px 0 0; padding-left: 20px; color: var(--muted); }
+    li { margin: 6px 0; }
+    .updated { font-size: 14px; color: #7b8492; }
+    .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 0; }
+    button {
+      border: 1px solid var(--line);
+      background: #f8fbff;
+      color: var(--text);
+      padding: 9px 13px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .doc { display: none; }
+    .doc.active { display: block; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <h1>Peers - Rules and Privacy</h1>
+      <p class="updated">Last updated: July 8, 2026</p>
+      <p>This page contains the combined rules and privacy information for the Peers mobile app.</p>
+      <div class="tabs" aria-label="Language selector">
+        <button type="button" class="active" data-lang="ru">Русский</button>
+        <button type="button" data-lang="kk">Қазақша</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+    </div>
+
+    <div id="ru" class="doc active" lang="ru">
+      <section><h2>Правила и конфиденциальность</h2><p>Peers - приложение профессиональной взаимопомощи. Этот документ объясняет, какие данные используются в приложении, зачем они нужны, как можно удалить аккаунт, а также какие правила безопасности действуют при общении.</p></section>
+      <section><h2>1. Какие данные используются</h2><p>Peers использует данные, которые пользователь указывает сам или создаёт при работе с приложением.</p><ul><li>email или логин, никнейм и пароль в защищённом виде;</li><li>аватар, страна, город, профессия, специализация и описание профиля;</li><li>заявки, ответы, комментарии, личные сообщения и диалоги;</li><li>вложения, если пользователь сам прикрепляет файл или фото;</li><li>реферальный код, приглашения и связанные с ними действия;</li><li>push-токен устройства для отправки уведомлений;</li><li>технические данные, необходимые для работы, безопасности и стабильности сервиса.</li></ul></section>
+      <section><h2>2. Зачем нужны данные</h2><ul><li>создавать аккаунт, входить в приложение и восстанавливать доступ;</li><li>показывать профиль, профессию, специализацию, заявки и ответы;</li><li>передавать сообщения, комментарии и вложения между пользователями;</li><li>отправлять push-уведомления о важных событиях в приложении;</li><li>поддерживать безопасность, модерацию, защиту от спама и злоупотреблений;</li><li>улучшать стабильность и качество работы приложения.</li></ul></section>
+      <section><h2>3. Безопасность общения</h2><ul><li>не публикуйте пароли, коды подтверждения, банковские данные, документы, адреса и телефоны;</li><li>не размещайте персональные данные клиентов, коллег, пациентов или других людей без их согласия;</li><li>не используйте Peers для угроз, оскорблений, преследования, спама или незаконных действий;</li><li>не просите и не давайте опасные инструкции, которые могут причинить вред людям, имуществу или нарушить закон;</li><li>медицинские, юридические, финансовые и другие ответственные темы обсуждайте осторожно. Peers не заменяет консультацию профильного специалиста.</li></ul></section>
+      <section><h2>4. Модерация и ограничения</h2><p>Администрация может проверять жалобы, ограничивать доступ к функциям, скрывать материалы или блокировать аккаунты, если пользователь нарушает правила безопасности, мешает работе сервиса или злоупотребляет доверием других пользователей.</p></section>
+      <section><h2>5. Сторонние сервисы</h2><p>Для работы Peers используются собственный backend на VPS, Firebase Cloud Messaging для push-уведомлений и сервисы Google Play для распространения приложения. Эти сервисы могут обрабатывать технические данные, необходимые для их работы.</p></section>
+      <section><h2>6. Хранение и защита данных</h2><p>Мы принимаем разумные меры для защиты данных и стабильной работы сервиса. При этом ни один способ передачи или хранения данных в интернете не может быть абсолютно безопасным. Пользователь также отвечает за сохранность своего устройства, пароля и доступа к аккаунту.</p></section>
+      <section><h2>7. Удаление аккаунта и данных</h2><p>Чтобы запросить удаление аккаунта и связанных данных, напишите на <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a> с email, который использовался в аккаунте, или укажите свой никнейм. После обработки запроса профиль и связанные данные будут удалены или обезличены, кроме данных, которые могут временно сохраняться для безопасности, модерации, защиты от злоупотреблений или выполнения технических требований.</p></section>
+      <section><h2>8. Возрастные ограничения</h2><p>Приложение не предназначено для детей младше 13 лет. Если станет известно, что аккаунт создан пользователем младше 13 лет, такой аккаунт может быть удалён.</p></section>
+      <section><h2>9. Изменения документа</h2><p>Документ может обновляться по мере развития приложения. Актуальная версия доступна в приложении и на этой публичной странице.</p></section>
+      <section><h2>10. Контакты</h2><p>По вопросам конфиденциальности, правил безопасности, жалоб и удаления аккаунта можно написать на <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a>.</p></section>
+    </div>
+
+    <div id="kk" class="doc" lang="kk">
+      <section><h2>Ережелер және құпиялық</h2><p>Peers - кәсіби өзара көмекке арналған қолданба. Бұл құжат қолданбада қандай деректер пайдаланылатынын, олардың не үшін қажет екенін, аккаунтты қалай жоюға болатынын және қарым-қатынас кезіндегі қауіпсіздік ережелерін түсіндіреді.</p></section>
+      <section><h2>1. Қандай деректер пайдаланылады</h2><p>Peers пайдаланушы өзі көрсеткен немесе қолданбаны пайдалану кезінде жасаған деректерді пайдаланады.</p><ul><li>email немесе логин, никнейм және қорғалған түрде сақталатын пароль;</li><li>аватар, ел, қала, мамандық, мамандану және профиль сипаттамасы;</li><li>өтінімдер, жауаптар, пікірлер, жеке хабарламалар және диалогтар;</li><li>пайдаланушы өзі тіркеген файлдар немесе фотосуреттер;</li><li>рефералдық код, шақырулар және оларға байланысты әрекеттер;</li><li>push-хабарламалар жіберуге арналған құрылғы токені;</li><li>қолданбаның жұмысы, қауіпсіздігі және тұрақтылығы үшін қажет техникалық деректер.</li></ul></section>
+      <section><h2>2. Деректер не үшін қажет</h2><ul><li>аккаунт жасау, қолданбаға кіру және қолжетімділікті қалпына келтіру;</li><li>профильді, мамандықты, мамандануды, өтінімдер мен жауаптарды көрсету;</li><li>хабарламаларды, пікірлерді және тіркемелерді пайдаланушылар арасында жеткізу;</li><li>қолданбадағы маңызды оқиғалар туралы push-хабарламалар жіберу;</li><li>қауіпсіздікті, модерацияны, спамнан және теріс пайдаланудан қорғауды қамтамасыз ету;</li><li>қолданбаның тұрақтылығы мен сапасын жақсарту.</li></ul></section>
+      <section><h2>3. Қарым-қатынас қауіпсіздігі</h2><ul><li>парольдерді, растау кодтарын, банк деректерін, құжаттарды, мекенжайларды және телефондарды жарияламаңыз;</li><li>клиенттердің, әріптестердің, пациенттердің немесе басқа адамдардың жеке деректерін олардың келісімінсіз жарияламаңыз;</li><li>Peers қолданбасын қорқыту, балағаттау, қудалау, спам немесе заңсыз әрекеттер үшін пайдаланбаңыз;</li><li>адамдарға, мүлікке зиян келтіруі немесе заңды бұзуы мүмкін қауіпті нұсқауларды сұрамаңыз және бермеңіз;</li><li>медициналық, заңдық, қаржылық және басқа жауапты тақырыптарды сақтықпен талқылаңыз. Peers бейінді маманның кеңесін алмастырмайды.</li></ul></section>
+      <section><h2>4. Модерация және шектеулер</h2><p>Әкімшілік шағымдарды тексеруі, функцияларға қолжетімділікті шектеуі, материалдарды жасыруы немесе аккаунттарды бұғаттауы мүмкін, егер пайдаланушы қауіпсіздік ережелерін бұзса, сервистің жұмысына кедергі келтірсе немесе басқа пайдаланушылардың сенімін теріс пайдаланса.</p></section>
+      <section><h2>5. Үшінші тарап сервистері</h2><p>Peers жұмысы үшін VPS-тағы жеке backend, push-хабарламаларға арналған Firebase Cloud Messaging және қолданбаны таратуға арналған Google Play сервистері пайдаланылады. Бұл сервистер өз жұмысына қажетті техникалық деректерді өңдеуі мүмкін.</p></section>
+      <section><h2>6. Деректерді сақтау және қорғау</h2><p>Біз деректерді қорғау және сервистің тұрақты жұмысы үшін ақылға қонымды шаралар қабылдаймыз. Дегенмен интернет арқылы деректерді беру немесе сақтау тәсілдерінің ешқайсысы толық қауіпсіз бола алмайды. Пайдаланушы да өз құрылғысының, паролінің және аккаунтқа қолжетімділігінің қауіпсіздігіне жауап береді.</p></section>
+      <section><h2>7. Аккаунтты және деректерді жою</h2><p>Аккаунтты және байланысты деректерді жоюды сұрау үшін <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a> мекенжайына аккаунтта пайдаланылған email-ді немесе никнеймді көрсетіп жазыңыз. Сұрау өңделгеннен кейін профиль және байланысты деректер жойылады немесе иесіздендіріледі, қауіпсіздік, модерация, теріс пайдаланудан қорғау немесе техникалық талаптар үшін уақытша сақталуы мүмкін деректерді қоспағанда.</p></section>
+      <section><h2>8. Жас шектеуі</h2><p>Қолданба 13 жасқа толмаған балаларға арналмаған. Аккаунтты 13 жасқа толмаған пайдаланушы жасағаны белгілі болса, мұндай аккаунт жойылуы мүмкін.</p></section>
+      <section><h2>9. Құжаттағы өзгерістер</h2><p>Қолданба дамыған сайын бұл құжат жаңартылуы мүмкін. Өзекті нұсқа қолданбада және осы ашық бетте қолжетімді.</p></section>
+      <section><h2>10. Байланыс</h2><p>Құпиялық, қауіпсіздік ережелері, шағымдар және аккаунтты жою мәселелері бойынша <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a> мекенжайына жазуға болады.</p></section>
+    </div>
+
+    <div id="en" class="doc" lang="en">
+      <section><h2>Rules and Privacy</h2><p>Peers is an app for professional mutual help. This document explains what data the app uses, why it is needed, how account deletion works, and which safety rules apply to communication.</p></section>
+      <section><h2>1. Data we use</h2><p>Peers uses data that users provide themselves or create while using the app.</p><ul><li>email or login, nickname, and password stored in a protected form;</li><li>avatar, country, city, profession, specialization, and profile description;</li><li>requests, answers, comments, private messages, and dialogs;</li><li>attachments if the user chooses to upload a file or photo;</li><li>referral code, invitations, and related actions;</li><li>device push token for notifications;</li><li>technical data required for the operation, security, and stability of the service.</li></ul></section>
+      <section><h2>2. Why the data is needed</h2><ul><li>to create an account, sign in, and restore access;</li><li>to show profiles, professions, specializations, requests, and answers;</li><li>to deliver messages, comments, and attachments between users;</li><li>to send push notifications about important app events;</li><li>to support security, moderation, spam protection, and abuse prevention;</li><li>to improve app stability and quality.</li></ul></section>
+      <section><h2>3. Communication safety</h2><ul><li>do not publish passwords, verification codes, bank details, documents, addresses, or phone numbers;</li><li>do not share personal data of clients, colleagues, patients, or other people without their consent;</li><li>do not use Peers for threats, insults, harassment, spam, or illegal activity;</li><li>do not request or provide dangerous instructions that may harm people, property, or violate the law;</li><li>discuss medical, legal, financial, and other sensitive topics carefully. Peers does not replace advice from a qualified professional.</li></ul></section>
+      <section><h2>4. Moderation and restrictions</h2><p>The administration may review reports, limit access to features, hide content, or block accounts if a user violates safety rules, interferes with the service, or abuses the trust of other users.</p></section>
+      <section><h2>5. Third-party services</h2><p>Peers uses its own backend on a VPS, Firebase Cloud Messaging for push notifications, and Google Play services for app distribution. These services may process technical data required for their operation.</p></section>
+      <section><h2>6. Data storage and protection</h2><p>We take reasonable measures to protect data and keep the service stable. However, no method of transmitting or storing data over the internet can be completely secure. Users are also responsible for the security of their device, password, and account access.</p></section>
+      <section><h2>7. Account and data deletion</h2><p>To request deletion of your account and related data, email <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a> from the email used in your account or include your nickname. After processing the request, the profile and related data will be deleted or anonymized, except for data that may be temporarily retained for security, moderation, abuse prevention, or technical requirements.</p></section>
+      <section><h2>8. Age limit</h2><p>The app is not intended for children under 13. If we learn that an account was created by a user under 13, that account may be deleted.</p></section>
+      <section><h2>9. Changes to this document</h2><p>This document may be updated as the app develops. The current version is available in the app and on this public page.</p></section>
+      <section><h2>10. Contact</h2><p>For privacy, safety rules, reports, and account deletion questions, contact <a href="mailto:karsky23@gmail.com">karsky23@gmail.com</a>.</p></section>
+    </div>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll('button[data-lang]');
+    const docs = document.querySelectorAll('.doc');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const lang = button.dataset.lang;
+        buttons.forEach((item) => item.classList.toggle('active', item === button));
+        docs.forEach((doc) => doc.classList.toggle('active', doc.id === lang));
+        document.documentElement.lang = lang;
+      });
+    });
+  </script>
+</body>
+</html>
